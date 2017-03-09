@@ -173,8 +173,10 @@
     <div id="toc-container">
       <ul id="toc">
         {{#files}}
-        <li>
-          <a href="#{{file_name}}">{{file_name}}</a>
+        <details>
+          <summary>
+            <a href="#{{file_name}}">{{file_name}}</a>
+          </summary>
           <ul>
             {{#file_messages}}
             <li>
@@ -209,9 +211,9 @@
             </li>
             {{/file_services}}
           </ul>
-        </li>
+        </details>
         {{/files}}
-        <li><a href="#scalar-value-types">Scalar Value Types</a></li>
+        <a href="#scalar-value-types">Scalar Value Types</a>
       </ul>
     </div>
 
